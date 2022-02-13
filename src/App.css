@@ -1,0 +1,75 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav{
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.1);
+}
+
+.grey{
+  color: #918E9B;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+nav>img{
+  margin: 22.3px 30px;
+  max-width: 100px;
+}
+
+.hero{
+  display: flex;
+  flex-direction: column;
+}
+
+.hero--collage{
+  margin-top: 30px;
+  width: 90vw;
+  max-width: 600px;
+  align-self: center;
+}
+
+.hero--title{
+  margin-left: 10%;
+  margin-bottom: 16px;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.hero--para{
+margin-left: 10%;
+min-width: 320px;
+font-weight: 300;
+font-size: 16px;
+color: #222222;
+}
+
+.card{
+  width: 175px;
+  font-size: 12px;
+}
+
+.card--image{
+  width: 100%;
+  border-radius: 9px;
+}
+
+.card--stats{
+  display: flex;
+  align-items: center;
+}
+
+.card--stats *{
+  padding-right: 2px;
+}
+
+.card--star{
+  height: 14px;
+}
