@@ -31,7 +31,7 @@ nav>img{
 }
 
 .hero--collage{
-  margin-top: 30px;
+  margin: 30px 0;
   width: 90vw;
   max-width: 600px;
   align-self: center;
@@ -61,6 +61,7 @@ font-size: 16px;
 }
 
 .card{
+  position: relative;
   width: 180px;
   font-size: 12px;
   margin: 20px;
@@ -88,4 +89,14 @@ font-size: 16px;
 .card--title {
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.card--badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
 }

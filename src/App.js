@@ -10,13 +10,15 @@ export default function App() {
     return (
       <Card
         key={datum.id}
-        img={datum.coverImg}
+        item={datum} />
+        /* img={datum.coverImg}
         rating={datum.stats.rating}
         reviewCount={datum.stats.reviewCount}
         location={datum.location}
         title={datum.title}
         price={datum.price}
-      />
+        openSpots={datum.openSpots} */
+      
     )
   });
 
