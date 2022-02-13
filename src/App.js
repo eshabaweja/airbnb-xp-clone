@@ -2,15 +2,29 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero.js';
 import Card from './components/Card.js';
-
-
+import data from "./data.js"
 
 export default function App() {
+
+  const cards = data.map( datum => {
+    return (
+      <Card
+        key={datum.id}
+        img={datum.coverImg}
+        rating={datum.stats.rating}
+        reviewCount={datum.stats.reviewCount}
+        location={datum.location}
+        title={datum.title}
+        price={datum.price}
+      />
+    )
+  });
+
   return (
     <div className="App">
       <Navbar />
-     {/*  <Hero /> */}
-     <Card />
+      <Hero />
+      <div className="cards">{cards} </div>
     </div>
   );
 }

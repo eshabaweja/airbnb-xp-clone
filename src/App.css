@@ -1,8 +1,9 @@
 *{
   margin: 0;
   padding: 0;
-  color: black;
+  color: #222222;
   font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
 }
 
 nav{
@@ -41,6 +42,7 @@ nav>img{
   margin-bottom: 16px;
   font-size: 36px;
   font-weight: 600;
+  color: black;
 }
 
 .hero--para{
@@ -48,17 +50,26 @@ margin-left: 10%;
 min-width: 320px;
 font-weight: 300;
 font-size: 16px;
-color: #222222;
+}
+
+.cards{
+  margin-left: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }
 
 .card{
-  width: 175px;
+  width: 180px;
   font-size: 12px;
+  margin: 20px;
 }
 
 .card--image{
-  width: 100%;
+  height: 235px;
   border-radius: 9px;
+  margin-bottom: 9px;
 }
 
 .card--stats{
@@ -72,4 +83,9 @@ color: #222222;
 
 .card--star{
   height: 14px;
+}
+
+.card--title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
